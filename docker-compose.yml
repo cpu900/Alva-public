@@ -1,0 +1,31 @@
+services:
+  acmecorp-intranet-breach-web-security-level-3-alva:
+    image: cpu900/acmecorp-alva:1.2
+    container_name: acmecorp-alva
+    hostname: acmecorp.alva.ctf
+    environment:
+      - FLASK_ENV=production
+    ports:
+      - "5555:5000"
+    restart: unless-stopped
+    networks:
+      - alva-net
+
+  buggy-homepage-web-security-level-3-alva:
+    image: cpu900/buggy-alva:1.2
+    container_name: buggy-alva
+    hostname: buggy.alva.ctf
+    environment:
+      - TZ=Europe/Stockholm
+    ports:
+      - "80:80"
+      - "8000:8000"
+    restart: unless-stopped
+    depends_on:
+      - acmecorp-intranet-breach-web-security-level-3-alva
+    networks:
+      - alva-net
+
+networks:
+  alva-net:
+    driver: bridge
