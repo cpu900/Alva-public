@@ -30,8 +30,8 @@ You can either clone the entire repository using Git or download just the `docke
 ### Option 1: Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/cpu900/Alva-public.git
+cd Alva-public
 ```
 
 ### Option 2: Download `docker-compose.yml` manually
