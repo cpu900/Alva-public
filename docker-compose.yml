@@ -1,6 +1,6 @@
 services:
   acmecorp-intranet-breach-web-security-level-3-alva:
-    image: cpu900/acmecorp-alva:1.2
+    image: cpu900/acmecorp-alva:1.3
     container_name: acmecorp-alva
     hostname: acmecorp.alva.ctf
     environment:
@@ -12,7 +12,7 @@ services:
       - alva-net
 
   buggy-homepage-web-security-level-3-alva:
-    image: cpu900/buggy-alva:1.2
+    image: cpu900/buggy-alva:1.3
     container_name: buggy-alva
     hostname: buggy.alva.ctf
     environment:
