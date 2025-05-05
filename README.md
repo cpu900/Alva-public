@@ -64,7 +64,7 @@ docker-compose down
 If you also want to delete the downloaded images and free up disk space:
 
 ```bash
-docker image rm acmecorp-alva:1.1 buggy-alva:1.1
+docker image rm cpu900/acmecorp-alva:1.5 cpu900/buggy-alva:1.5
 ```
 
 > ⚠️ Only do this if you no longer need the containers and have finished the tests.
